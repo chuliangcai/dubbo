@@ -1,7 +1,6 @@
 package com.example.provider;
 
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -18,4 +17,6 @@ public class Main {
                 .run(args);
         System.in.read();
     }
+
+
 }
