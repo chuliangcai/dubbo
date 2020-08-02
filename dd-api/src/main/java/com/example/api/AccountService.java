@@ -4,5 +4,5 @@ public interface AccountService {
     /**
      * 账户扣款
      */
-    public void deduct();
+    void deduct();
 }

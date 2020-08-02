@@ -1,8 +1,10 @@
 package com.example.provider;
 
-import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
-import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 
 /**
  * @author superman
@@ -11,10 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableDubbo
 public class Main {
     public static void main(String[] args) throws Exception {
-        /*new SpringApplicationBuilder(Main.class)
-                .web(WebApplicationType.NONE) // .REACTIVE, .SERVLET
-                .run(args);
-        System.in.read();*/
-        SpringApplication.run(Main.class, args);
+        new SpringApplicationBuilder(Main.class).web(WebApplicationType.NONE).run(args);
+        System.in.read();
     }
 }
